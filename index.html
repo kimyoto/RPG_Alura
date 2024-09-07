@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG da Alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Título do Jogo -->
+    <h1>RPG da Alura</h1>
+
+    <!-- Descrição do Jogo -->
+    <p id="descricao-jogo">
+        Neste RPG emocionante, você enfrentará chefões elementares usando equipamentos poderosos! 
+        Seu objetivo é derrotar todos os bosses, mas cuidado: cada boss tem fraquezas e resistências 
+        elementares que podem afetar suas chances de vitória. Para lutar, você deve primeiro <strong>buscar e equipar</strong> 
+        seus itens – armas, armaduras e anéis – na barra de pesquisa. Você pode pesquisar por <strong>tipo de equipamento</strong> 
+        (arma, equipamento, anel) ou <strong>elemento</strong> (fogo, luz, água, etc.), facilitando a escolha dos itens ideais para a batalha. Clique em <strong>Lutar</strong> para continuar lutando.
+    </p>
+
+    <!-- Layout de Três Colunas -->
+    <div class="container">
+        <!-- Seção de Pesquisa -->
+        <section class="pesquisa">
+            <h2>Criação de Personagem</h2>
+            <p>Equipe seu personagem! Pesquise: 'arma', 'equipamento' ou 'anel'.</p>
+            <!-- Campo de Pesquisa -->
+            <input type="text" id="pesquisa" placeholder="Digite aqui o que deseja adicionar ao seu personagem">
+            <!-- Botão de Pesquisa -->
+            <button id="btn-pesquisar">Pesquisar</button>
+            <!-- Resultados da Pesquisa -->
+            <div class="resultados-pesquisa" id="resultados"></div>
+        </section>
+
+        <!-- Equipamentos Equipados -->
+        <section class="equipamento-equipado">
+            <h2>Equipamentos Equipados</h2>
+            <div>
+                <!-- Exibição da Arma Equipada -->
+                <h3>Arma:</h3>
+                <p id="arma">Nenhuma arma equipada</p>
+            </div>
+            <div>
+                <!-- Exibição da Armadura Equipada -->
+                <h3>Equipamento:</h3>
+                <p id="armadura">Nenhum equipamento equipado</p>
+            </div>
+            <div>
+                <!-- Exibição do Anel Equipado -->
+                <h3>Anéis:</h3>
+                <p id="anel">Nenhum anel equipado</p>
+            </div>
+            <!-- Botão Lutar -->
+            <button id="btn-lutar" style="display: none;">Lutar</button>
+        </section>
+
+        <!-- Seção de Luta Contra o Boss -->
+        <section class="luta-boss">
+            <h2>Preparação para a Batalha</h2>
+            <p>Aqui será a área para a luta contra o boss.</p>
+            <!-- Resultado da Batalha -->
+            <div id="resultado-batalha"></div>
+        </section>
+
+    </div>
+
+    <!-- Seção para Mensagem de Vitória -->
+    <div id="vitoria">
+    </div>    
+    
+    <!-- Scripts JavaScript -->
+    <script src="armas.js"></script>
+    <script src="armaduras.js"></script>
+    <script src="aneis.js"></script>
+    <script src="bosses.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
