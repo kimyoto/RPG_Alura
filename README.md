@@ -36,6 +36,11 @@ Na primeira vez que um boss aparece, você ouvirá um som específico associado 
 
 4. **Escute o Som do Boss**: A primeira vez que um boss aparece, aguarde 2 segundos para ouvir o som associado a ele.
 
+## 🎨 Créditos
+
+- **Imagens**: Criadas com a IA Flux Schnell.
+- **Som**: Criado com o MusicFX do Google e sons dos monstros obtidos em [Pixabay](https://pixabay.com/pt/).
+  
 ---
 
 Aproveite a jornada no **RPG da Alura** e boa sorte nas batalhas! 🎮🗡️
